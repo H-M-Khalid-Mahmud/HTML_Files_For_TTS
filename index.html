@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My HTML Files</title>
-    <script>
-        function searchFiles() {
-            // search functionality
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML File Browser</title>
+    <script defer src="script.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input { width: 100%; padding: 10px; margin-bottom: 10px; }
+        ul { list-style: none; padding: 0; }
+        li { padding: 10px; border-bottom: 1px solid #ddd; }
+        a { text-decoration: none; color: blue; }
+    </style>
 </head>
 <body>
-    <input type="text" id="searchBar" onkeyup="searchFiles()" placeholder="Search for files...">
-    <ul id="fileList">
-        <li><a href="https://htmlpreview.github.io/?https://github.com/yourusername/yourrepository/blob/main/file1.html">File 1</a></li>
-        <li><a href="https://htmlpreview.github.io/?https://github.com/yourusername/yourrepository/blob/main/file2.html">File 2</a></li>
-        <!-- আরো ফাইলের তালিকা -->
-    </ul>
+    <h2>HTML File Browser</h2>
+    <input type="text" id="search" placeholder="Search files..." onkeyup="searchFiles()">
+    <ul id="file-list"></ul>
 </body>
 </html>
